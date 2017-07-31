@@ -2,6 +2,7 @@
 
 ## Credits
 - Thijs de Witt
+- Alex B
 
 
 

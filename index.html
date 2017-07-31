@@ -31,6 +31,7 @@
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
     <script type="text/javascript" src="js/RippleEffect.js"></script>
     <script type="text/javascript" src="js/CustomBreakline.js"></script>
+    <script type="text/javascript" src="js/Credits.js"></script>
 
     <!--    Stylesheets-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -186,11 +187,15 @@
                 <p>VertexOS Carbide v3.3 and RenderZenith EAS 009 kernel</p></label>
 
                 <ul>
-                    VertexOS v3.3 changes * Updated to CAF LA.UM.5.8.r1-02200-8x98.0 tag * Improve Schedutil performance (I noticed before it was performing terribly compared to Sched) * Re-enabled sdcardfs * Back to CFQ for now * Updated APNs from LineageOS * Updated to latest blobs and device tree commits from LineageOS * Reverted VR framework until someone tells me they want to use it * UI fixes (LTE+, Shutdown message, etc) * Camera has the processing dialogue again (I haven't smali edit it yet) RenderZenith EAS 009 changes * Upstreamed to Linux 3.18.60 * Updated with latest LineageOS commits * Enable RCU_BOOST * Disable BUS_AUTO_SUSPEND * Cherry-picked some commits from Pixel kernel * Tuned sRGB for S6E3FA5 display * DCI-P3 support for S6E3FA5 displays (tunable is in /sys/devices/virtual/graphics/fb0/dci_p3. Please set it with Ex Kernel Manager or a script to echo 1 into the tunable. I'll maybe add a toggle in future) * Enabled Boeffla Touchkey driver by default (capacitive keys light up OOS-style)
+                    <br>
+                    <p>VertexOS v3.3 changes</p> * Updated to CAF LA.UM.5.8.r1-02200-8x98.0 tag * Improve Schedutil performance (I noticed before it was performing terribly compared to Sched) * Re-enabled sdcardfs * Back to CFQ for now * Updated APNs from LineageOS * Updated to latest blobs and device tree commits from LineageOS * Reverted VR framework until someone tells me they want to use it * UI fixes (LTE+, Shutdown message, etc) * Camera has the processing dialogue again (I haven't smali edit it yet)
+
+                    <br><br><br>
+                    <p>RenderZenith EAS 009 changes</p> * Upstreamed to Linux 3.18.60 * Updated with latest LineageOS commits * Enable RCU_BOOST * Disable BUS_AUTO_SUSPEND * Cherry-picked some commits from Pixel kernel * Tuned sRGB for S6E3FA5 display * DCI-P3 support for S6E3FA5 displays (tunable is in /sys/devices/virtual/graphics/fb0/dci_p3. Please set it with Ex Kernel Manager or a script to echo 1 into the tunable. I'll maybe add a toggle in future) * Enabled Boeffla Touchkey driver by default (capacitive keys light up OOS-style)
                 </ul>
             </div>
 
-            <div class="v3_2">
+            <div class="v3.2">
                 <input type="radio" name="changelog" id="3.2">
                 <label for="3.2">
                 
@@ -198,7 +203,93 @@
                 <p>VertexOS Carbide v3.2 and RenderZenith EAS 008 kernel</p></label>
 
                 <ul>
-                    <b>VertexOS v3.2 changes</b> * VertexOTA bringup! * Enable IO prefetching * Updated to CAF LA.UM.5.8.r1-02000-8x98.0 tag * Updated to Lineage latest device and vendor commits * Dialer: add in-call vibration features * Restrict system-background tasks to little cluster only <b>RenderZenith EAS 008 changes</b> * Switched to PELT for load tracking * Kernel updated in line with @RenderBroken's latest EAS and Lineage commits * Removed a ton of 'optimizations'. I'll be doing more benchmarking before re-adding them back. Let's keep things simple.
+                    <br>
+                    <p>VertexOS v3.2 changes</p> * VertexOTA bringup! * Enable IO prefetching * Updated to CAF LA.UM.5.8.r1-02000-8x98.0 tag * Updated to Lineage latest device and vendor commits * Dialer: add in-call vibration features * Restrict system-background tasks to little cluster only
+
+                    <br>
+                    <br>
+                    <br>
+                    <p>RenderZenith EAS 008 changes</p> * Switched to PELT for load tracking * Kernel updated in line with @RenderBroken's latest EAS and Lineage commits * Removed a ton of 'optimizations'. I'll be doing more benchmarking before re-adding them back. Let's keep things simple.
+                </ul>
+            </div>
+
+            <div class="v3.1">
+                <input type="radio" name="changelog" id="3.1">
+                <label for="3.1">
+                
+                <b>27 May 2017</b>
+                <p>VertexOS Carbide v3.1 and RenderZenith EAS 007 kernel</p></label>
+
+                <ul>
+                    <br>
+                    <p>VertexOS v3.1 changes</p>
+                    * Comes with RenderZenith 007 kernel * Android 7.1.2 (5 May 2017 security string) * CAF LA.UM.5.8.r1-01600-8x98.0 tag * In line with Lineage's latest commits * OB16 blobs * OOS Camera without processing dialogue or weird green screens * Latest Substratum commits added * Disabled sdcardfs (to avoid white LED bug) * HSPA+ icons * High brightness mode QS tile * Fixed Bluetooth issues * Other internal updates
+
+                    <br>
+                    <br>
+                    <br>
+                    <p>RenderZenith EAS 007 changes</p>
+                    * Updated to Lineage's latest commits * EAS updates (thanks to @RenderBroken) * Spectrum support * BFQ updates * F2FS updates
+                </ul>
+            </div>
+
+            <div class="v3.0">
+                <input type="radio" name="changelog" id="3.0">
+                <label for="3.0">
+                
+                <b>8 May 2017</b>
+                <p>VertexOS Carbide v3.0 and RenderZenith EAS 006 kernel</p></label>
+
+                <ul>
+                    <br>
+                    <p>VertexOS v3.0 changes</p>
+                    * Comes with RenderZenith 006 kernel * Android 7.1.2 (5 Apr 2017 security string) * Complete rebase to CAF LA.UM.5.8.r1-01500-8x98.0 * In line with Lineage's latest commits * Latest Substratum commits added * See app new and old version number in Package Installer * Use realtime scheduling for UI and Display thread (AOSPA) * Button settings: Menu action fixed (AOSPA) * Toggle to show battery level of connected bluetooth devices (SystemUI Tuner) * Brand new Vertex Wallpapers (thanks to AERTIME and @Morphicsn0w) * Moved toggle for "Press power button twice for camera" to Buttons category * Automatic DND fixes * UI fixes * Removed HSPA+ icons for now (UI bug)
+
+                    <br>
+                    <br>
+                    <br>
+                    <p>RenderZenith EAS 006 changes</p>
+                    * Updated to Lineage's latest commits * Ported the very latest BFQ upstream changes (default IO scheduler, and performs on par with CFQ in benchmarks in Androbench) * Optimised BFQ for SSDs * Boeffla Touchkey Control driver (hardware button users rejoice) * sdcardfs updates * Linux upstream CFQ updates
+                </ul>
+            </div>
+
+            <div class="v2.2">
+                <input type="radio" name="changelog" id="2.2">
+                <label for="2.2">
+                
+                <b>26 April 2017</b>
+                <p>VertexOS Blazar v2.2 and RenderZenith EAS 005 kernel</p></label>
+
+                <ul>
+                    <br>
+                    <p>VertexOS v2.2 changes</p>
+                    * Comes with RenderZenith 005 kernel * Complete rebase to CAF LA.UM.5.7.r2-00500-8x98.0 (still 7.1.1, security string is February 5, 2017) * Introduce Vox Populi Power HAL with custom boosting (opensourced at https://github.com/eas-project) * EAS updates for cgroup * All EAS governors are now supported (if your kernel includes them) * In line with Lineage's latest commits * OOS OB14 blobs * OOS OB14 camera * Qualcomm IO prefetching * VertexOS Bootanimation (thanks to @Morphicsn0w) * Even faster fingerprint unlock (thanks to @Sultanxda) * HSPA+ icons * Added Lineage's Circle battery icon and other battery icon fixes * Removed Screenshot Crop and Share (broken for now) * Latest Substratum commits added * Added toggle for "Press power button twice for camera" (Display settings) * Added VoLTE icon * UI fixes
+
+                    <br>
+                    <br>
+                    <br>
+                    <p>RenderZenith EAS 005 changes</p>
+                    * Rebased to @RenderBroken's latest build (improved task placement and smoothness) * Using WALT load tracking mechanism * Updated to Lineage's latest commits * Enabled Dynamic Fsync (faster random writes)
+                </ul>
+            </div>
+
+            <div class="v2.1">
+                <input type="radio" name="changelog" id="2.1">
+                <label for="2.1">
+                
+                <b>23 March 2017</b>
+                <p>VertexOS Blazar v2.1 and Zenith EAS 004 kernel</p></label>
+
+                <ul>
+                    <br>
+                    <p>VertexOS v2.1 changes</p>
+                    * CAF LA.UM.5.6.r1-03800-89xx.0 tag * OOS 4.1.0 blobs * OOS 4.1.0 camera * VertexOS wallpapers @Morphicsn0w) * Vertex Walls wallpaper picker * Disable SIM toggle * Daydream Virtual Reality support * Reduced wpa_supplicant log spam * DownloadManager: show download speeds * "+" icon for Priority Mode * Faster fingerprint unlock @Sultanxda) * Removed Emergency text on Lockscreen * Denied CellularBroadcast messages from Channels 50 and 60 (India and Brazil) * Reduced touch boost value slightly (improved battery life, yet smooth) * More custom button actions: Kill app, Turn off screen * Disabled custom button actions: Menu, in-app search * Removed Dev tools * Replaced reboot vectors * UI fixes * Custom QS columns (Omnirom)
+
+                    <br>
+                    <br>
+                    <br>
+                    <p>Zenith EAS 004 changes</p>
+                    * Updated with latest Lineage changes as of 23 March * AdrenoBoost * Backlight dimmer * Ability to block more wakelocks (@franciscofranco)
                 </ul>
             </div>
         </div>

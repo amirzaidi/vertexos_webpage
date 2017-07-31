@@ -119,6 +119,15 @@ header .links a.xda:after {
     padding: 8px 0;
 }
 
+.drawer-wrapper ul:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.12);
+    margin-top: 8px;
+}
+
 .drawer-wrapper ul:after {
     content: "";
     display: block;
@@ -369,9 +378,11 @@ section#changelog .content {
     max-width: 768px;
     margin: 0 auto;
 }
+
 section#changelog .content div p:last-of-type {
     line-height: 20px;
 }
+
 section#changelog .content div input {
     display: none;
 }

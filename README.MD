@@ -1,1 +1,7 @@
-This is the Official code for VertexOS.org
+# (C) VertexOS 2017
+
+## Credits
+- Thijs de Witt
+
+
+

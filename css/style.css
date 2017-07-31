@@ -209,7 +209,6 @@ input#menu:focus+header div div.shade {
     margin: 0 auto;
     transition: box-shadow .3s;
     font-size: 14px;
-    /*                user-select: none;*/
 }
 
 .button a:hover {
@@ -286,7 +285,6 @@ section#download .devices {
     max-width: 768px;
     margin: 0 auto;
     padding-bottom: 16px;
-    background: transparent;
 }
 
 section#download .devices>* {
@@ -300,23 +298,13 @@ section#download .devices div input {
 
 section#download .devices div p {
     width: 100%;
-    display: block;
     height: 48px;
     color: #f44336;
     line-height: 48px;
-    padding: 0 16px;
 }
 
-section#download .devices div div.content {
-    height: auto;
-    width: 100%;
-    transition: height .3s ease-in-out;
-    padding-left: 16px;
-    padding-bottom: 16px;
-    display: block;
-}
-
-section#download .devices div div.content h2 {
+section#download .devices div div h2 {
+    text-align: left;
     display: inline-block;
 }
 
@@ -329,10 +317,7 @@ section#download .devices img {
     height: 125px;
     display: inline-block;
     position: relative;
-    float: right;
-    top: 30px;
-    padding-right: 32px;
-    ;
+    padding: 0 32px 0 16px;
 }
 
 

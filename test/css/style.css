@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 200vh;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #888B8D;
+    padding: 30px 0;
+    font-size: 24px;
+}
+
+h2 {
+    color: #888B8D;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 16px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+img {
+    user-select: none;
+}
+
+
+/*Header*/
+
+header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 64px;
+    color: #888B8D;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    top: 0;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 20px;
+    text-align: left;
+    width: 100%;
+    padding: 0 16px;
+    user-select: none;
+}
+
+header .menu {
+    float: right;
+    z-index: 99;
+    position: relative;
+}
+
+header .material-icons {
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    padding: 20px;
+    user-select: none;
+}
+
+header .links {
+    display: flex;
+    height: 48px;
+}
+
+header .links a {
+    width: calc(33% - 2px);
+    text-align: center;
+    line-height: 48px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+}
+
+header .links a:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 32px;
+    margin: 8px 0;
+    background: rgba(0, 0, 0, 0.12);
+    transform: translateY(-48px);
+}
+
+header .links a.xda:after {
+    display: none;
+}
+
+
+/*Navigation Drawer*/
+
+.drawer-wrapper {
+    position: fixed;
+    width: 256px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.26);
+    z-index: 999;
+    left: -260px;
+    transition: left .3s ease-out .5s;
+}
+
+.drawer-wrapper ul {
+    display: block;
+    padding: 8px 0;
+}
+
+.drawer-wrapper ul:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.12);
+    margin-top: 8px;
+}
+
+.drawer-wrapper ul li {
+    list-style-type: none;
+}
+
+.drawer-wrapper ul li a i.material-icons {
+    display: inline-block;
+    float: left;
+    padding: 12px 32px 12px 0px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.drawer-wrapper ul li a {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.drawer-menu .shade {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.12);
+    width: 100vw;
+    height: 0px;
+    top: 0;
+    z-index: 99;
+    opacity: 0;
+    transition: all .3s ease-out .5s, height 0s ease-out .8s;
+}
+
+
+/*Menu Drawer Trigger Effects*/
+
+input#menu:focus+header div div {
+    left: 0px;
+    transition: left .3s ease-out 0s;
+}
+
+input#menu:focus+header div div.shade {
+    opacity: 1;
+    height: 100vh;
+}
+
+
+/*Button*/
+
+.button {
+    position: relative;
+    margin: 32px auto 0px auto;
+    text-align: center;
+    color: #EF314C;
+    line-height: 16px;
+    padding: 0 16px;
+    max-width: 132px;
+}
+
+.button p {
+    padding-bottom: 8px;
+}
+
+.button a {
+    background: linear-gradient(-70deg, #f44336, #E91E63);
+    padding: 0 16px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.26);
+    margin: 0 auto;
+    transition: box-shadow .3s;
+    font-size: 14px;
+    user-select: none;
+}
+
+.button a:hover {
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.26);
+}
+
+
+/* ---------------------
+        Sections
+----------------------*/
+
+section {
+    min-height: 512px;
+    background: #fff;
+}
+
+
+/*Home*/
+
+section#home {
+    background: #fafafa;
+    padding-top: 64px;
+}
+
+section#home img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 150px;
+    width: 100vw;
+}
+
+section#home img.phone {
+    width: inherit;
+    height: inherit;
+    top: none;
+}
+
+section#home img.phone.desktop {
+    display: none;
+}
+
+section#home h2 {
+    position: absolute;
+    transform-origin: bottom;
+    transform: translate(-50%, calc(496px - 100%));
+    left: 50%;
+    width: calc(100% - 32px);
+    padding: 0 16px;
+}
+
+
+/*New*/
+
+section#news h1 {
+    color: #EF314C;
+}
+
+section#news h2 {
+    padding-bottom: 64px;
+}
+
+section#news .button {
+    padding-bottom: 32px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*Donate*/
+
+section#donate {
+    background: #fafafa;
+}
+
+
+/*Download*/
+
+section#download .devices {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    background: transparent;
+}
+
+section#download .devices>* {
+    display: block;
+}
+
+section#download .devices div input {
+    left: -16px;
+    position: absolute;
+}
+
+section#download .devices div p {
+    width: 100%;
+    display: block;
+    height: 48px;
+    color: #EF314C;
+    line-height: 48px;
+    padding: 0 16px;
+}
+
+section#download .devices div div.content {
+    height: auto;
+    width: 100%;
+    transition: height .3s ease-in-out;
+    overflow: show;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    display: block;
+}
+
+section#download .devices div div.content h2 {
+    display: inline-block;
+}
+
+section#download .devices div div.content a {
+    color: #EF314C;
+    text-decoration: none;
+}
+
+section#download .devices img {
+    height: 125px;
+    display: inline-block;
+    position: relative;
+    float: right;
+    top: 30px;
+    padding-right: 32px;
+    ;
+}
+
+
+/*Changelog*/
+
+section#changelog {
+    background: #fafafa;
+}

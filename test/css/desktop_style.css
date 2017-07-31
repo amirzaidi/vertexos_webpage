@@ -1,0 +1,31 @@
+@media(min-width:768px) {
+    /* ---------------------
+            Sections
+    ----------------------*/
+    /*    Home*/
+    section#home img {
+        height: 256px;
+    }
+    section#home img.phone {
+        display: none;
+        width: auto;
+    }
+    section#home img.phone.desktop {
+        display: block;
+    }
+    /*    News*/
+    /*    Donate*/
+    /*    Download*/
+    section#download .devices img {
+        display: block;
+    }
+    /*    Changelog*/
+    /*    END OF SECTIONS*/
+    /*    Button*/
+    .button {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-100%);
+    }
+}

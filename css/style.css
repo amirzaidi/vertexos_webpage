@@ -261,14 +261,31 @@ section#home h2 {
 
 /*New*/
 
+section#news {
+    background: url(../img/p_bg.png), #f44336 no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    box-shadow: inset 0px 10px 20px rgba(0, 0, 0, 0.2), inset 0px -10px 20px rgba(0, 0, 0, 0.2);
+}
+
+section#news h1 {
+    color: #fff;
+}
+
 section#news h2 {
     padding-bottom: 64px;
+    color: #fff;
 }
 
 section#news .button {
     padding-bottom: 32px;
     margin: 0 auto;
     position: relative;
+}
+
+section#news .button a {
+    background: #fff;
+    color: #f44336;
 }
 
 

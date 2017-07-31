@@ -355,29 +355,55 @@ section#download .devices img {
 /*Changelog*/
 
 section#changelog {
-    background: #fafafa;
+    background: #303030;
+    color: #fff;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, .5);
+}
+
+section#changelog h1 {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.26);
 }
 
 section#changelog .content {
+    padding: 0 16px;
     max-width: 768px;
     margin: 0 auto;
-    padding-bottom: 32px;
+}
+section#changelog .content div p:last-of-type {
+    line-height: 20px;
+}
+section#changelog .content div input {
+    display: none;
 }
 
-section#changelog .content ul {
-    padding: 0 16px;
-    list-style-type: none;
-}
-
-section#changelog .content ul p {
-    color: #EF314C;
-    text-align: left;
-    width: 100%;
+section#changelog .content div label {
     display: block;
-    height: 48px;
-    line-height: 48px;
+    height: 64px;
+    line-height: 32px;
+    padding-bottom: 16px;
 }
 
-section#changelog .content ul li {
-    padding-left: 32px;
+section#changelog .content div label:after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.12);
+    margin-top: 16px;
+}
+
+section#changelog .content div label>p {
+    padding-left: 16px;
+}
+
+section#changelog .content div ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+    padding: 0 32px 16px 32px;
+}
+
+section#changelog .content input:checked~ul {
+    max-height: 1000px;
 }

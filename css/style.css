@@ -304,13 +304,25 @@ section#download .devices {
     padding-bottom: 16px;
 }
 
-section#download .devices>* {
-    display: block;
+section#download .devices>div {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
-section#download .devices div input {
-    left: -16px;
-    position: absolute;
+section#download .devices>div:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.12);
+    margin-top: 16px;
+}
+
+section#download .devices div>div {
+    display: inline-block;
 }
 
 section#download .devices div p {
@@ -332,7 +344,9 @@ section#download .devices div div a {
 
 section#download .devices img {
     height: 125px;
+    top: 30px;
     display: inline-block;
+    float: left;
     position: relative;
     padding: 0 32px 0 16px;
 }

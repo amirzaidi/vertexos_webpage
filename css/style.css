@@ -187,6 +187,10 @@ input#menu:focus+header div div.shade {
     max-width: 132px;
 }
 
+.button:last-of-type {
+    padding-bottom: 16px;
+}
+
 .button p {
     padding-bottom: 8px;
 }

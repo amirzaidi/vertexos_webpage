@@ -29,6 +29,10 @@ h2 {
 }
 
 img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
     user-select: none;
 }
 
@@ -53,6 +57,10 @@ header h1 {
     text-align: left;
     width: 100%;
     padding: 0 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
     user-select: none;
     color: #888B8D;
 }
@@ -68,6 +76,10 @@ header .material-icons {
     width: 24px;
     height: 24px;
     padding: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
     user-select: none;
 }
 
@@ -217,6 +229,11 @@ input#menu:focus+header div div.shade {
     margin: 0 auto;
     transition: box-shadow .3s;
     font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .button a:hover {
@@ -392,6 +409,11 @@ section#changelog .content div label {
     font-size: 16px;
     line-height: 32px;
     border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 section#changelog .content div label:after {

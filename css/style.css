@@ -306,6 +306,10 @@ section#donate {
 
 /*Download*/
 
+section#download h1 {
+    padding: 32px 0;
+}
+
 section#download .devices {
     max-width: 768px;
     margin: 0 auto;

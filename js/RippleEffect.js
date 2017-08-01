@@ -2,9 +2,7 @@
 
     $(function () {
 
-
         $('.button a, .ripple').on('click', function (event) {
-            //            event.preventDefault();
 
             var $div = $('<div/>'),
                 btnOffset = $(this).offset(),
@@ -26,6 +24,7 @@
                 })
                 .appendTo($(this));
 
+            // Remove ripple effect
             window.setTimeout(function () {
                 $div.remove();
             }, 2000);

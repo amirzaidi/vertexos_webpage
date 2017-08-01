@@ -36,6 +36,10 @@ img {
     user-select: none;
 }
 
+a:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
 
 /*Header*/
 
@@ -238,6 +242,7 @@ input#menu:focus+header div div.shade {
 
 .button a:hover {
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.26);
+    background: auto;
 }
 
 

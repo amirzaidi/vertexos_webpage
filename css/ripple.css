@@ -12,6 +12,12 @@
     overflow: hidden;
 }
 
+li a:focus,
+label:hover,
+header label>.material-icons:hover {
+    animation: background 1s;
+}
+
 .ripple-effect {
     position: absolute;
     border-radius: 50%;
@@ -19,6 +25,7 @@
     height: 50px;
     background: black;
     animation: ripple-animation 1.3s ease-out;
+    animation animation-iteration-count: 1;
 }
 
 @keyframes ripple-animation {
@@ -29,5 +36,20 @@
     to {
         transform: scale(50);
         opacity: 0;
+    }
+}
+
+@keyframes background {
+    0% {
+        background: transparent;
+    }
+    33% {
+        background: rgba(0, 0, 0, 0.06);
+    }
+    66% {
+        background: rgba(0, 0, 0, 0.06);
+    }
+    100% {
+        background: transparent;
     }
 }

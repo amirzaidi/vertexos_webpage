@@ -19,8 +19,8 @@
 
             $div
                 .css({
-                    top: yPos - ($ripple.height() / 2),
-                    left: xPos - ($ripple.width() / 2),
+                    top: yPos - (50 / 2),
+                    left: xPos - (50 / 2),
                     background: $(this).data("ripple-color")
                 })
                 .appendTo($(this));

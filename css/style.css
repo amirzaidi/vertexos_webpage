@@ -351,9 +351,8 @@ section#download .devices>div:after {
     margin-top: 16px;
 }
 
-section#download .devices>div:last-of-type {
-    padding: 0px;
-    margin: 0px;
+section#download .devices>div:last-of-type:after {
+    display: none;
 }
 
 section#download .devices div>div {

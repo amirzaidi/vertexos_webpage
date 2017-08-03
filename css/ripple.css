@@ -12,10 +12,8 @@
     overflow: hidden;
 }
 
-li a:focus,
-label:hover,
-header label>.material-icons:hover {
-    animation: background 1s;
+.ripple-overlay {
+    transition: background .3s ease-out;
 }
 
 .ripple-effect {
@@ -36,20 +34,5 @@ header label>.material-icons:hover {
     to {
         transform: scale(50);
         opacity: 0;
-    }
-}
-
-@keyframes background {
-    0% {
-        background: transparent;
-    }
-    33% {
-        background: rgba(0, 0, 0, 0.06);
-    }
-    66% {
-        background: rgba(0, 0, 0, 0.06);
-    }
-    100% {
-        background: transparent;
     }
 }

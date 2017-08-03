@@ -9,13 +9,14 @@
                 xPos = event.pageX - btnOffset.left,
                 yPos = event.pageY - btnOffset.top;
 
-
-
             $div.addClass('ripple-effect');
             var $ripple = $(".ripple-effect");
 
-            $ripple.css("height", $(this).height());
-            $ripple.css("width", $(this).height());
+            // Makes sure that the ripple effect wont get too dark caused by too many effect overlapping
+            if ($ripple.length >= 3) {
+                $(".ripple-effect:first").remove();
+            };
+
             $div
                 .css({
                     top: yPos - ($ripple.height() / 2),

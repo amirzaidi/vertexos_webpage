@@ -1,7 +1,22 @@
 (function (window, $) {
 
     $(function () {
+        $('.button a, .ripple').on('mousedown', function (event) {
+            $(this).css({
+                background: 'rgba(0, 0, 0, 0.06)'
+            });
+            $(this).addClass('ripple-overlay');
+        });
+        $('.button a, .ripple').on('mouseup', function (event) {
 
+            $(this).css({
+                background: 'transparent'
+            });
+            setTimeout(function () {
+                $('.ripple-overlay').removeClass('ripple-overlay');
+            }, 1000);
+        });
+        //-----------------------------------------------------------
         $('.button a, .ripple').on('click', function (event) {
 
             var $div = $('<div/>'),

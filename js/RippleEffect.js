@@ -24,10 +24,10 @@
                 })
                 .appendTo($(this));
 
-            // Remove ripple effect
+            // Remove ripple effect after 1000 milliseconds
             window.setTimeout(function () {
                 $div.remove();
-            }, 2000);
+            }, 1000);
         });
 
     });

@@ -2,16 +2,24 @@
 
     $(function () {
         $('.button a, .ripple').on('mousedown', function (event) {
+
+            // Set background color
             $(this).css({
                 background: 'rgba(0, 0, 0, 0.06)'
             });
+
+            // Add class ripple-overlay
             $(this).addClass('ripple-overlay');
         });
+
         $('.button a, .ripple').on('mouseup', function (event) {
 
+            // Set background back to transparent
             $(this).css({
                 background: 'transparent'
             });
+
+            // Remove class ripple-overlay after (1000) ms
             setTimeout(function () {
                 $('.ripple-overlay').removeClass('ripple-overlay');
             }, 1000);

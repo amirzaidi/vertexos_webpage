@@ -331,8 +331,7 @@ section#download h1 {
 
 section#download .devices {
     max-width: 768px;
-    margin: 0 auto;
-    padding-bottom: 16px;
+    margin: 0 auto
 }
 
 section#download .devices>div {
@@ -350,6 +349,11 @@ section#download .devices>div:after {
     width: 100%;
     background: rgba(0, 0, 0, 0.12);
     margin-top: 16px;
+}
+
+section#download .devices>div:last-of-type {
+    padding: 0px;
+    margin: 0px;
 }
 
 section#download .devices div>div {

@@ -25,10 +25,4 @@
         left: 50%;
         transform: translateX(-100%);
     }
-    li a:hover,
-    label:hover,
-    header label>.material-icons:hover {
-        animation: none;
-        background: rgba(0, 0, 0, 0.06);
-    }
 }

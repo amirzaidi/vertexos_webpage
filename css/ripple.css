@@ -1,6 +1,7 @@
 .ripple {
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 
 .button a {

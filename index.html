@@ -160,10 +160,11 @@
     <section id="changelog" onload="ReplaceSymbol">
         <h1>Changelogs</h1>
         <div class="content">
-            <div class="v3.3">
-                <input type="radio" name="changelog" id="3.3" checked>
+            <div class="v3.3" onclick="showDetail()">
 
-                <label class="ripple" for="3.3">
+                <input type="radio" name="changelog" id="3.3" checked data-waschecked="true">
+
+                <label class="ripple" for="3.3" >
                     <p>15 July 2017</p>
                     <p>VertexOS Carbide v3.3 and RenderZenith EAS 009 kernel</p>
                 </label>
@@ -175,10 +176,10 @@
                     <br><br><br>
                     <p>RenderZenith EAS 009 changes</p> * Upstreamed to Linux 3.18.60 * Updated with latest LineageOS commits * Enable RCU_BOOST * Disable BUS_AUTO_SUSPEND * Cherry-picked some commits from Pixel kernel * Tuned sRGB for S6E3FA5 display * DCI-P3 support for S6E3FA5 displays (tunable is in /sys/devices/virtual/graphics/fb0/dci_p3. Please set it with Ex Kernel Manager or a script to echo 1 into the tunable. I'll maybe add a toggle in future) * Enabled Boeffla Touchkey driver by default (capacitive keys light up OOS-style)
                 </ul>
-            </div>
 
+</div>
             <div class="v3.2">
-                <input type="radio" name="changelog" id="3.2">
+                <input type="radio" name="changelog" id="3.2" data-waschecked="true">
                 <label class="ripple" for="3.2">
                     <p>27 June 2017</p>
                     <p>VertexOS Carbide v3.2 and RenderZenith EAS 008 kernel</p>
@@ -196,7 +197,7 @@
             </div>
 
             <div class="v3.1">
-                <input type="radio" name="changelog" id="3.1">
+                <input type="radio" name="changelog" id="3.1" data-waschecked="true">
                 <label class="ripple" for="3.1">
                     <p>27 May 2017</p>
                     <p>VertexOS Carbide v3.1 and RenderZenith EAS 007 kernel</p>
@@ -216,7 +217,7 @@
             </div>
 
             <div class="v3.0">
-                <input type="radio" name="changelog" id="3.0">
+                <input type="radio" name="changelog" id="3.0" data-waschecked="true">
                 <label class="ripple" for="3.0">
                     <p>8 May 2017</p>
                     <p>VertexOS Carbide v3.0 and RenderZenith EAS 006 kernel</p>
@@ -236,7 +237,7 @@
             </div>
 
             <div class="v2.2">
-                <input type="radio" name="changelog" id="2.2">
+                <input type="radio" name="changelog" id="2.2" data-waschecked="true">
                 <label class="ripple" for="2.2">
                     <p>26 April 2017</p>
                     <p>VertexOS Blazar v2.2 and RenderZenith EAS 005 kernel</p>
@@ -256,7 +257,7 @@
             </div>
 
             <div class="v2.1">
-                <input type="radio" name="changelog" id="2.1">
+                <input type="radio" name="changelog" id="2.1" data-waschecked="true">
                 <label class="ripple" for="2.1">
                     <p>23 March 2017</p>
                     <p>VertexOS Blazar v2.1 and Zenith EAS 004 kernel</p>
@@ -278,4 +279,23 @@
     </section>
 </body>
 
+<script>
+    $(function(){
+    $('input[name="changelog"]').click(function(){
+        var $radio = $(this);
+
+        // if this was previously checked
+        if ($radio.data('waschecked') == true)
+        {
+            $radio.prop('checked', false);
+            $radio.data('waschecked', false);
+        }
+        else
+            $radio.data('waschecked', true);
+
+        // remove was checked from other radios
+        $radio.siblings('input[type="radio"]').data('waschecked', false);
+    });
+});
+</script>
 </html>
